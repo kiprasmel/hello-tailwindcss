@@ -1,0 +1,17 @@
+{
+	"name": "tailwindcss",
+	"version": "0.0.0",
+	"main": "index.js",
+	"author": "Kipras Melnikovas <kipras@kipras.org> (https://kipras.org/)",
+	"license": "UNLICENSED",
+	"scripts": {
+		"start": "node_modules/.bin/postcss css/*.css -o dist/main.css -w"
+	},
+	"dependencies": {
+		"postcss-import": "^12.0.1",
+		"tailwindcss": "^1.2.0"
+	},
+	"devDependencies": {
+		"postcss-cli": "^7.1.0"
+	}
+}
