@@ -7,9 +7,9 @@
 		<link rel="stylesheet" href="/dist/main.css" />
 	</head>
 	<body class="bg-gray-300">
-		<div class="bg-gray-100 flex">
-			<div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12">
-				<div class="xl:max-w-lg xl:ml-auto">
+		<div class="bg-gray-100 flex"> <!-- classes ain't inside body, because the height will be smaller than the whole thing -->
+			<div class="px-8 py-12 max-w-md mx-auto sm:max-w-xl lg:max-w-full lg:w-1/2 lg:py-24 lg:px-12"> <!-- flex item -->
+				<div class="xl:max-w-lg xl:ml-auto"> <!-- we probably could move this up 1 level & get rid of this div -->
 					<img class="h-20" src="/img/logo.svg" alt="Workcation" />
 					<img
 						class="mt-6 rounded-lg shadow-xl sm:mt-12 sm:h-64 sm:w-full sm:object-cover sm:object-center lg:hidden"
@@ -34,15 +34,15 @@
 						</a>
 					</div>
 				</div>
-			</div>
+			</div> <!-- / flex item -->
 
-			<div class="hidden lg:block lg:w-1/2 lg:relative">
+			<div class="hidden lg:block lg:w-1/2 lg:relative"> <!-- flex item -->
 				<img
 					class="absolute inset-0 h-full w-full object-cover object-center"
 					src="/img/workation.jpg"
 					alt="Woman workationing on the beach"
 				/>
-			</div>
-		</div>
+			</div> <!-- / flex item -->
+		</div> <!-- / flex container -->
 	</body>
 </html>
